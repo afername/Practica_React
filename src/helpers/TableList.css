@@ -1,0 +1,19 @@
+.box-item {
+    border: 1px solid green;
+    padding: 1em;
+    margin-top: 15px;
+    border-radius: 3%;
+}
+
+.backdrop-image {
+    width: 50%;
+}
+
+.title {
+    margin: 10px;
+}
+
+.details-link {
+    text-decoration: none !important;
+    color: black;
+}

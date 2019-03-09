@@ -23,3 +23,9 @@ puntuación a cada una.
 o eliminando películas.
 - También habrá una vista de detalle de cada película en la que mostrar
 directamente los datos de la misma obtenidos del API de themoviedb.
+
+# Instalación
+´´´npm install´´´
+
+# Ejecutar en modo development 
+´´´npm start´´´
