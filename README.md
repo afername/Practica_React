@@ -25,7 +25,11 @@ o eliminando películas.
 directamente los datos de la misma obtenidos del API de themoviedb.
 
 # Instalación
-´´´npm install´´´
+```
+npm install
+```
 
 # Ejecutar en modo development 
-´´´npm start´´´
+```
+npm start
+```
