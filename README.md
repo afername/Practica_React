@@ -3,7 +3,7 @@
 
 ## Download and Installation 
 
-###Clone repo: 
+##Clone repo: 
 ```git clone https://github.com/afername/Practica_React```
  
        Place your key in: /app/api/ApiKey.js
