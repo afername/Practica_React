@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "App películas",
+  "name": "App creada con React para leer películas de API The Movie Database",
   "icons": [
     {
       "src": "favicon.ico",

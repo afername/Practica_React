@@ -1,20 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+
+
+:root{
+--primary-color-dark:   #6b7886;
+--primary-color:        #4d759c;
+--primary-color-darker: #3d8ddd;
+--primary-color-light:  #fff;
+--bg-color: #dee1e5;
+--color-secundary: #8b6ae7;
+--font-size: 1rem;
+--line-height:1.5rem;
+--lines:4;
+
+}
+
 .App {
   text-align: center;
+  background-color: var(--bg-color);
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
 }
+
+
 
 .App-link {
   color: #61dafb;
 }
+
+figure{
+  width: 35%;
+  float: left;
+  margin: 0px;
+
+}
+
+.btn-primary{
+  background-color: #6aabe7;
+  border-color: #6a6ce7;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.btn-primary:hover{
+  background-color: #654cab;
+  border-color: #8b6ae7;
+}
+
+figure img{
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+}
+
+.navbar-dark{
+background-color: var(--primary-color);
+margin-bottom: 1rem;
+
+}
+
+.navbar-dark a{
+  color: white;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.navbar-dark a:hover{
+  color: var(--color-secundary);
+  text-decoration: none;
+}
+
+.titulo{
+  display: block;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1rem;
+  color: var(--primary-color);
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.titulo h1{
+  display: inline;
+}
+
+.titulo button{
+  position: absolute;
+  right: 1rem;
+}
+
+.wrap{
+  justify-content:space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card{
+  background-color:white;
+  margin: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
+  width: 100%;
+  border-radius: 2rem;
+
+
+}
+
+.card__content{
+  width: 65%;
+  float: left;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+
+.card__content__header{
+  padding: 1rem 0 0.5rem 0;
+  background-color: var(--primary-color-darker);
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+
+}
+
+.card__content__header a{
+  color: white;
+}
+
+.card__content__header h2{
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.description{
+  display: block;
+  display: -webkit-box;
+  height: 6rem;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  -webkit-line-clamp: var(--lines);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__content__main p{
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-top: 1rem;
+
+}
+
+.card__content__main ul{
+  padding-inline-start: 0.7rem;
+
+}
+
+.card__content__main li {
+  list-style: none;
+  display: inline;
+  margin-right: 0.7rem;
+  font-weight: 600;
+}
+
+
+.card__content__footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  text-align: right;
+}
+
+.card__content__footer i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.card__content__footer button{
+  margin-left: 1rem;
+
+}
+
+.card__content__rating {
+  margin-top: .5rem;
+  margin-left: 1rem;
+}
+
+
+.card__collection{
+  background-color: var(--primary-color-darker);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5rem;
+  position: relative;
+
+}
+
+.card__collection > a {
+  text-decoration: none;
+  color: white;
+}
+
+.card__collection h2{
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  display: inline;
+  margin-right: 2rem;
+
+}
+
+.card__collection .badge {
+  margin-right: 1rem;
+}
+
+.card__collection i{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
+
+.card__collection p{
+  color: #6f98b9;
+
+}
+
+.detail h3{
+  margin-left: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color:var(--primary-color);
+}
+.header__detail{
+  background-color: var(--primary-color-darker);
+  padding:1rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.header__detail h2{
+  display: inline;
+
+
+}
+.header__detail span{
+  margin-left: 0.5rem;
+  color: #6f98b9;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+.main__detail{
+  padding: 1rem;
+}
+
+.main__detail ul{
+  padding-inline-start: 0px;
+}
+
+li{
+list-style: none;
+}
+
+section{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--primary-color-darker);
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.aside{
+  width: 100%;
+    margin: 1rem;
+}
+
+.aside ul{
+  padding-inline-start: 0px;
+
+}
+
+.aside button{
+display: block;
+margin-bottom: 1rem;
+}
+
+.cast{
+  padding-inline-start: 0px;
+display: flex;
+flex-flow: row wrap;
+margin-top: 1rem;
+margin-left: 1rem;
+}
+
+.cast li{
+  width: 100%;
+  margin: 0.5rem;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  margin:1rem;
+  font-weight: bold;
+}
+
+.cast span{
+  font-weight: normal;
+}
+
+.body__footer{
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--primary-color-light);
+  width: 100%;
+  margin-top: 1rem;
+}
+aside.social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+aside.social a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #4c6c86;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -23,4 +356,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media screen and (min-width: 985px) {
+
+
+.card {
+  width: 48%;
+}
+
+.detail{
+  width: 80%;
+}
+
+.cast li{
+  width: 45%;}
+
+.card__collection{
+  width: 48%;
+}
+
+.aside{
+width: 46%;
+}
 }
