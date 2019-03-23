@@ -6,9 +6,6 @@
 ##Clone repo: 
 ```git clone https://github.com/afername/Practica_React```
  
-       Place your key in: /app/api/ApiKey.js
-    Start the server: npm run start
-
 
 ## Installation
 
@@ -19,7 +16,10 @@
 ```https://www.themoviedb.org/```
 
 
-## Import your key to /app/api/ApiKey.js
+## Import your key to 
+```
+/app/api/ApiKey.js
+```
 
 
 ### `npm start`
